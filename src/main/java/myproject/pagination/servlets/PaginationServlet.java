@@ -50,8 +50,8 @@ EmployeeService employeeService = null;
 		out.print("</center>");
 		out.print("<body>");
 		out.print("<html>");
-//		RequestDispatcher requestDispatcher = request.getRequestDispatcher("form.html");
-//		requestDispatcher.forward(request, response); 
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("form.html");
+		requestDispatcher.include(request, response); 
 	}
 
 }
